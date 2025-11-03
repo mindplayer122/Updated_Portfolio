@@ -1,0 +1,362 @@
+.navigation{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 70px;
+    padding: 10px 10px;
+    z-index: 1000;
+    background-color: rgba(11, 19, 66, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.52);
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.logo-container
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    flex-shrink: 0;
+}
+
+.logo
+{
+    height:50px;
+    width:auto;
+    border-radius: 6px;
+}
+
+.tagline
+{
+    color:white;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin:0;
+}
+
+/*Navigation Menu*/
+nav ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    flex-wrap: wrap;
+    /*Centers Menu*/
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+nav li
+{
+    margin:0;
+}
+
+nav a
+{
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+nav a:hover{
+    color:grey;
+    border-bottom: 2px solid white;
+}
+
+html,body 
+{
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+main{
+    flex: 1;
+    background-color: rgba(29, 48, 156, 0.95);
+}
+
+/*Footer Styling*/
+footer
+{
+    background-color: rgba(29, 48, 156, 0.95);
+    padding:20px 0;
+    color:white;
+    width: 100%;
+}
+
+.footer-content
+{
+    justify-content: space-between;
+    display:flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer-links
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.footer-links a,
+.footer-links a:visited,
+.footer-links a:active
+{
+    color:white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer-links a:hover
+{
+    color:grey;
+    text-decoration: none;
+    transform: color 0.3s;
+}
+
+.Social
+{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1px;
+    margin-top: 10px;
+}
+
+.Social a
+{
+    color:white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-right: 40px;
+}
+.Social a:hover
+{
+    color: grey;
+    text-decoration: none; 
+}
+
+/* Header Section*/
+
+.hero-section
+{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height:calc(100vh - 70px);
+    background: linear-gradient(rgba(11, 19, 66, 0.85), rgba(11, 19, 66, 0.85)),
+        url(images/coding_background.jpg) left/cover no-repeat;
+    color:white;
+    padding: 0 10%;
+    text-align: left;
+    min-height: 100vh;;
+    box-sizing: border-box;
+}
+
+.hero-content
+{
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-content h1
+{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-intro
+{
+    font-size:1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.hero-button
+{
+    display:inline-block;
+    background-color: rgba(30, 61, 238, 0.95);
+    color:white;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover
+{
+    background-color: rgba(81, 105, 243, 0.95); 
+    color:grey;
+}
+
+.highlight
+{
+    color: rgba(68, 89, 212, 0.95);
+}
+
+/* Section Styling*/
+
+.section
+{
+    background-color: rgba(30, 61, 238, 0.95);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 70%;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(68, 89, 212, 0.95);
+
+    padding-top: 100px;
+}
+
+.section::before{
+    content: "";
+    display: block;
+    height:70px;
+    margin-top: -70px;
+    visibility: hidden;
+}
+.section h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color:white;
+    margin-bottom: 15px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.section p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:white;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.section li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color:white;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Projects Section Styling*/
+
+.projects
+{
+    background-color: rgba(11, 19, 66, 0.85);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+.projects h3
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:  20px;
+    color:white;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.projects
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color:white;
+    line-height: 1.6;
+}
+
+.projects strong
+{
+    color: #d4d4ff;
+}
+
+/*contact form*/
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    color: white;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: rgba(30, 61, 238, 0.95);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: rgba(81, 105, 243, 0.95);
+    color: grey;
+}
+
+.section a
+{
+    color:white;
+}
