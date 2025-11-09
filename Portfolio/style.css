@@ -360,3 +360,87 @@ footer
 {
     color:white;
 }
+/* ======Mobile(≤768px)======*/
+@media (max-width: 768px){
+    
+    /* NAvigation adjustments*/
+    .navigation
+    {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 15px;
+    }
+
+    .logo-container
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .tagline
+    {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    nav ul
+    {
+        position: static;
+        transform: none;
+        flex-direction: column;
+        gap:8px;
+        margin-top: 10px;
+    }
+
+    .hero-section
+    {
+        height:auto;
+        min-height: 100vh;
+        padding-top: 150px;
+
+
+    }
+    .Social
+    {
+        justify-content: center;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+
+    .Social a
+    {
+        margin-left: 15 px;
+    }
+
+    .footer-content 
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-links
+    {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}
+
+/* ======tablet(≤1024px)======*/
+
+@media(max-width: 1024px)
+{
+    nav ul
+    {
+        gap:15px;
+    }
+
+    .footer-links
+    {
+        gap: 15px;
+    }
+}
